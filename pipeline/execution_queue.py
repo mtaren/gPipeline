@@ -14,7 +14,7 @@ potentially other things off the main host computer.
 How the queue works
 1. Singleton class has a schedule_step function, returns a queue
 2. main thread waits (blocking) for output to come back
-3. PipelineQueue invokes a job schedular specified by the settings. 
+3. PipelineQueue invokes a job scheduler specified by the settings. 
 
 
 todo

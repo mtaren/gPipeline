@@ -20,4 +20,4 @@ lto finish as well.
 def get_scheduler(sched_type):
     # return eval(type + "()")
     if sched_type == "Circle": return LocalJobScheduler()
-    raise Exception("Unssuported Schedular: " + sched_type)
+    raise Exception("Unsupported Scheduler: " + sched_type)
