@@ -1,7 +1,6 @@
 """
 This global singleton                                                                                  
 """
-from utils.singleton import Singleton
 
 """
 Todo - 
@@ -19,10 +18,12 @@ How the queue works
 
 todo
 create a settings singleton with these things in mind
-    -  settings should be immutable after awhile
+    -  settings should be immutable after a point
     - get /set methods - no one should edit the internal settings manually
 
 """
 
-class PipelineQueue(metaclass=Singleton):
-    pass
+class PipelineRunner(object):
+    def __init__(self):
+        self.executors = []
+        self.pipeline_graph = None

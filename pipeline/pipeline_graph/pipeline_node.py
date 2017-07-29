@@ -11,6 +11,7 @@ class PipelineNode(object):
         self.edges = []
         self.executor_type = 'default'
         self.name = ""
+        self.action = None
         self.output = NOT_FINISHED
         self.parent = None
 
